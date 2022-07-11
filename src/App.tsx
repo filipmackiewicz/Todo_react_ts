@@ -3,9 +3,14 @@ import TodoList from './components/TodoList';
 
 
 function App() {
+  const todos = [{
+    id: 't1',
+    text: 'sample text',
+  }];
+
   return (
     <div className="App">
-      <TodoList/>
+      <TodoList items={todos} />
     </div>
   );
 }
